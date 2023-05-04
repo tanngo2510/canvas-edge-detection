@@ -20,10 +20,10 @@ video.addEventListener(
       ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
       let frame = ctx.getImageData(0, 0, canvas.width, canvas.height);
       frame = grayscale(frame);
-      // frame = sobelGradient(frame);
-      // frame = nonMaxSuppression(frame);
-      // frame = doubleThresholding(frame);
-      // frame = edgeTracking(frame);
+      frame = sobelGradient(frame);
+      frame = nonMaxSuppression(frame);
+      frame = doubleThresholding(frame);
+      frame = edgeTracking(frame);
       ctx.putImageData(frame, 0, 0);
     }, 20);
   },
