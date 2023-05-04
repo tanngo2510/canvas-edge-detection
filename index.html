@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <label for="videos">Choose a video: </label>
+        <select name="videos" id="videos">
+            <option value="mogu_mogu" data-foo="https://www.youtube.com/watch?v=j6P_m6adkgc" selected>もぐもぐYUMMY!</option>
+            <option value="bad_guy" data-foo="https://youtube.com/watch?v=Hq0UJ2Z1vS0">Bad Guy</option>
+            <option value="tokyo_bon" data-foo="https://youtube.com/watch?v=zhGnuWwpNxI">Tokyo Bon 2020</option>
+        </select>
+        <button type="button" onclick=changeVideo()>Change video</button>
+        </div>
+        <video src="Mogu_Mogu.mp4" id="video" width="640" height="360" controls autoplay loop></video>
+        <canvas id="canvas" width="640" height="360"></canvas>
+        <div class="source">
+            Source: <a id="link-video" href="https://www.youtube.com/watch?v=j6P_m6adkgc">もぐもぐYUMMY!</a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
