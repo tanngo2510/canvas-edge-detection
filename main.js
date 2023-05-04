@@ -19,8 +19,8 @@ video.addEventListener("play", () => {
     frame = grayscale(frame);
     frame = sobelGradient(frame);
     ctx.putImageData(frame, 0, 0);
-  }, 30);
-});
+  }, 20);
+}, false);
 
 function grayscale(frame) {
   const data = frame.data;
