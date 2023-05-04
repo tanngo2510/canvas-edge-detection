@@ -1,5 +1,4 @@
 function changeVideo() {
-  //get value from select tag
   let video = document.getElementById("videos");
   let name_file = video.options[video.selectedIndex].value;
   let url = video.options[video.selectedIndex].getAttribute("data-foo");
@@ -30,7 +29,6 @@ video.addEventListener(
   false
 );
 
-// //grayscale function
 function grayscale(frame) {
   const data = frame.data;
   for (let i = 0; i < data.length; i += 4) {
