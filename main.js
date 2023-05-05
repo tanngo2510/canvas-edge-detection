@@ -1,8 +1,8 @@
 function changeVideo() {
-  let video = document.getElementById("videos");
-  let name_file = video.options[video.selectedIndex].value;
-  let url = video.options[video.selectedIndex].getAttribute("data-foo");
-  let text = video.options[video.selectedIndex].text;
+  let video_list = document.getElementById("videos");
+  let name_file = video_list.options[video_list.selectedIndex].value;
+  let url = video_list.options[video_list.selectedIndex].getAttribute("data-foo");
+  let text = video_list.options[video_list.selectedIndex].text;
   document.getElementById("video").src = name_file + ".mp4";
   document.getElementById("link-video").href = url;
   document.getElementById("link-video").innerHTML = text;
