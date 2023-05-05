@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+        <div>
         <span>Do các video có dung lượng khá lớn (4.5 MB, 17.1 MB và 32.6 MB) nên có thể sẽ load hơi chậm xíu!</span>
         <br>
         <span>Nếu video không hiển thị, vui lòng đợi 5-10 giây và bấm nút Change video</span>
@@ -20,6 +21,7 @@
             <option value="tokyo_bon" data-foo="https://youtube.com/watch?v=zhGnuWwpNxI">Tokyo Bon 2020</option>
         </select>
         <button type="button" onclick=changeVideo()>Change video</button>
+        </div>
         <video src="mogu_mogu.mp4" id="video" width="640" height="360" controls autoplay></video>
         <canvas id="canvas" width="640" height="360"></canvas>
         <div class="source">
